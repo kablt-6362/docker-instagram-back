@@ -19,4 +19,5 @@ WORKDIR /app
 
 COPY --from=builder /app/build/libs/*.jar app.jar
 
+# CMD작동원리
 CMD ["java", "-jar", "app.jar"]
